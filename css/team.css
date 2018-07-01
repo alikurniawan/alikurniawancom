@@ -1,0 +1,7 @@
+.teamsize{
+  width: 150px; height: 150px;
+
+}
+.flexname{
+  display: flex; justify-content: space-around;
+}
