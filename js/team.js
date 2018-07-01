@@ -14,7 +14,7 @@ let getData = () => {
             <div class="col-sm-4">
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="${data.avatar_url}" alt="">
-              <h4>Kay Garland</h4>
+              <h4>${data.login}</h4>
               <p class="text-muted">Fullstack Developer</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">

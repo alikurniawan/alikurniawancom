@@ -26,6 +26,26 @@
     <link rel="stylesheet" href="./css/team.css">
 
   </head>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Please Login </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <body id="page-top">
 
@@ -55,13 +75,16 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
 
-
+</ul>
             <!-- Large modal -->
-            <button id="myModal" type="button" class="btn btn-primary" >Login</button>
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Login
+</button>
 
 
 
-          </ul>
+
         </div>
       </div>
     </nav>
@@ -312,7 +335,7 @@
         </div>
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+            <p class="large text-muted">We Are the great team.</p>
           </div>
         </div>
       </div>
@@ -323,8 +346,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
+            <a href="https://impactbyte.com/" target="_blank">
+              <img class="img-fluid d-block mx-auto" src="img/logos/ib.svg" alt="">
             </a>
           </div>
           <div class="col-md-3 col-sm-6">
@@ -660,6 +683,10 @@
     <script src="js/agency.min.js" type="text/javascript"></script>
     <script src="js/team.js" type="text/javascript"></script>
     <script src="js/login.js" type="text/javascript"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
   </body>
 
