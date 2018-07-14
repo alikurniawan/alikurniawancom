@@ -2,13 +2,19 @@
 <html lang="en">
 
 <head>
+	<script>
+		/*if (location.protocol != 'https:')
+		{
+		 location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+		}*/
+	</script>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Ali Kurniawan Crabs</title>
+  <title>Ali Kurniawan Pro</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,7 +35,7 @@
 
 
 <body id="page-top">
-  <!--Modal -->
+  <!--Modal login -->
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
@@ -43,7 +49,7 @@
 
           <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">ID  &nbsp;&nbsp;&nbsp;&nbsp;</span>
+              <span class="input-group-text" id="basic-addon1">ID</span>
             </div>
             <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
           </div>
@@ -59,6 +65,40 @@
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary">Login</button>
 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal signup -->
+  <div class="modal fade" id="exampleModalsignup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Please Login </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Username</span>
+            </div>
+            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Pass</span>
+            </div>
+            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Ok</button>
 
         </div>
       </div>
@@ -94,9 +134,8 @@
         </ul>
         <!-- Large modal -->
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-  Login
-</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalsignup">Signup</button>&nbsp;
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Login</button>
 
 
 
@@ -160,7 +199,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Portfolio</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h3 class="section-subheading text-muted">Personal</h3>
         </div>
       </div>
       <div class="row">
@@ -171,13 +210,14 @@
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/evisa.png" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Threads</h4>
-            <p class="text-muted">Illustration</p>
+            <h4>EVISA</h4>
+            <p class="text-muted">Evisa Online</p>
           </div>
         </div>
+
         <div class="col-md-4 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
             <div class="portfolio-hover">
@@ -185,13 +225,14 @@
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Explore</h4>
-            <p class="text-muted">Graphic Design</p>
+            <h4>Network Infrastructure</h4>
+            <p class="text-muted">Cisco, Mikrotik, Fortinet Configuration</p>
           </div>
         </div>
+
         <div class="col-md-4 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
             <div class="portfolio-hover">
@@ -202,11 +243,12 @@
             <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Finish</h4>
-            <p class="text-muted">Identity</p>
+            <h4>React JS Project</h4>
+            <p class="text-muted">Node JS</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
+
+        <!-- <div class="col-md-4 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -219,8 +261,9 @@
             <h4>Lines</h4>
             <p class="text-muted">Branding</p>
           </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
+        </div> -->
+
+        <!-- <div class="col-md-4 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -233,8 +276,9 @@
             <h4>Southwest</h4>
             <p class="text-muted">Website Design</p>
           </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
+        </div> -->
+
+        <!-- <div class="col-md-4 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -247,7 +291,8 @@
             <h4>Window</h4>
             <p class="text-muted">Photography</p>
           </div>
-        </div>
+        </div> -->
+
       </div>
     </div>
   </section>
@@ -258,7 +303,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">About</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h3 class="section-subheading text-muted">Everthing is Me</h3>
         </div>
       </div>
       <div class="row">
@@ -270,11 +315,11 @@
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>2009-2011</h4>
-                  <h4 class="subheading">Our Humble Beginnings</h4>
+                  <h4>2014-2018</h4>
+                  <h4 class="subheading">Project was in Indonesian Embassy in Pakistan</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  <p class="text-muted">This is a KBRI Islamabad (http://indonesian-embassy.pk)</p>
                 </div>
               </div>
             </li>
@@ -284,11 +329,11 @@
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>March 2011</h4>
-                  <h4 class="subheading">An Agency is Born</h4>
+                  <h4>2013-2014</h4>
+                  <h4 class="subheading">Worked in Gold Company</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  <p class="text-muted">Straitsbullion, PT (http://straitsbullion.com/)</p>
                 </div>
               </div>
             </li>
@@ -298,11 +343,25 @@
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>December 2012</h4>
-                  <h4 class="subheading">Transition to Full Service</h4>
+                  <h4>2011-2013</h4>
+                  <h4 class="subheading">Worked in Japan Machinery Manufacture's Company</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  <p class="text-muted">Toyota Tsusho Mechanical Engineering Serive Indonesia https://ttmeind.indonetwork.co.id/</p>
+                </div>
+              </div>
+            </li>
+						<li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>2009-2011</h4>
+                  <h4 class="subheading">Worked in Japan Manufacture Company</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Indonesia Nippon Seiki, PT http://www.ins.co.id/</p>
                 </div>
               </div>
             </li>
@@ -312,11 +371,12 @@
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>July 2014</h4>
-                  <h4 class="subheading">Phase Two Expansion</h4>
+                  <h4>2006-2009</h4>
+                  <h4 class="subheading">Worked in IT Consultan and Internet Service Provider's Company</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  <p class="text-muted">Primanet https://kti_primanet.indonetwork.co.id/</p>
+									<p class="text-muted">SCBD Net https://www.arthatel.co.id/</p>
                 </div>
               </div>
             </li>
@@ -435,22 +495,22 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <span class="copyright">Copyright &copy; Ali Kurniawan 2018</span>
+          <span class="copyright">Copyright &copy; Ali Kurniawan 2010</span>
         </div>
         <div class="col-md-4">
           <ul class="list-inline social-buttons">
             <li class="list-inline-item">
-              <a href="#">
-                  <i class="fa fa-twitter"></i>
+              <a href="https://github.com/alikurniawan" target="_blank">
+                  <i class="fa fa-github"></i>
                 </a>
             </li>
             <li class="list-inline-item">
-              <a href="#">
+              <a href="https://www.facebook.com/ali.kurniawan.1106829282" target="_blank">
                   <i class="fa fa-facebook"></i>
                 </a>
             </li>
             <li class="list-inline-item">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/ali-kurniawan-a02b4488/" target="_blank">
                   <i class="fa fa-linkedin"></i>
                 </a>
             </li>
@@ -486,16 +546,18 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores
-                  repudiandae, nostrum, reiciendis facere nemo!</p>
+                <h2 class="text-uppercase">Evisa</h2>
+                <p class="item-intro text-muted">Visa Form Online Application</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/evisaHD.png" alt="">
+                <p>This is a web visa application to give all of the local Nationality applying Visa  </p>
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Threads</li>
-                  <li>Category: Illustration</li>
+                  <li>Date: January 2018</li>
+                  <li>Client: KBRI Islamabad</li>
+                  <li>Category: Form Application</li>
                 </ul>
+
+								<a class="btn btn-success" target="_blank" href="https://evisa.alikurniawan.com">View This</a>
+
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
                     Close Project</button>
