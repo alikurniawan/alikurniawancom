@@ -6,11 +6,9 @@ let getData = () => {
     .then(datas => {
       const list = document.getElementById('rowMax');
       let followerList = '';
+
       datas.map((data, index) => {
         followerList += `
-
-
-
             <div class="col-sm-4">
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="${data.avatar_url}" alt="">
@@ -35,7 +33,6 @@ let getData = () => {
               </ul>
             </div>
           </div>
-
         `;
       })
       list.innerHTML = followerList;

@@ -30,45 +30,57 @@
   <link href="./css/agency.min.css" rel="stylesheet">
   <link href="./css/index.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/team.css">
+	<link rel="stylesheet" href="./css/loginStyleHome.css">
 
 </head>
 
 
 <body id="page-top">
   <!--Modal login -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<form id="frmLogin" class="" action="" method="post">
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Please Login </h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="modal-body">
 
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">ID</span>
-            </div>
-            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
-          </div>
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">Pass</span>
-            </div>
-            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
-          </div>
-
+			<div class="container">
+	<div class="row login_box">
+	    <div class="col-md-12 col-xs-12" align="center">
+            <div class="line"><h3>12 : 30 AM</h3></div>
+            <div class="outter"><img src="http://lorempixel.com/output/people-q-c-100-100-1.jpg" class="image-circle"/></div>
+            <h1>Hi Guest</h1>
+            <span>INDIAN</span>
+	    </div>
+        <div class="col-md-6 col-xs-6 follow line" align="center">
+            <h3>
+                 125651 <br/> <span>FOLLOWERS</span>
+            </h3>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Login</button>
-
+        <div class="col-md-6 col-xs-6 follow line" align="center">
+            <h3>
+                 125651 <br/> <span>FOLLOWERS</span>
+            </h3>
         </div>
-      </div>
+
+        <div class="col-md-12 col-xs-12 login_control">
+
+                <div class="control">
+                    <div class="label">Email Address</div>
+                    <input type="text" class="form-control" value="admin@gmail.com"/>
+                </div>
+
+                <div class="control">
+                     <div class="label">Password</div>
+                    <input type="password" class="form-control" value="123456"/>
+                </div>
+                <div align="center">
+                     <button class="btn btn-orange">LOGIN</button>
+                </div>
+        </div>
+    </div>
+</div>
+
     </div>
   </div>
+	</form>
 
   <!--Modal signup -->
   <div class="modal fade" id="exampleModalsignup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">

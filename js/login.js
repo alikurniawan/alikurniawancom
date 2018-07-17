@@ -3,6 +3,13 @@
 //   $('#myInput').trigger('focus')
 // })
 
-$('#myModal').on('hidden.bs.modal', function (e) {
-  // do something...
-})
+// $('#buttonLogin').on('hidden.bs.modal', function (e) {
+//   alert('Hello Ali');
+// })
+
+function goLogin(){
+  let txtId = document.getElementById('txtId').value;
+  let txtPassword = document.getElementById('txtPassword').value;
+
+  alert(txtId + '\n' + txtPassword);
+}
