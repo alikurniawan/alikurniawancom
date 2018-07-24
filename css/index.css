@@ -2,3 +2,10 @@
   width: 40px; height: 40px;
   border: 3px #fed136 solid;
 }
+.mar{
+  margin: 10px;
+}
+.bgDivBody{
+  background-color: #fed136;
+  opacity: 0.8;
+}

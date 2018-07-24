@@ -1,15 +1,32 @@
-//Login
-// $('#myModal').on('shown.bs.modal', function () {
-//   $('#myInput').trigger('focus')
-// })
+const btnLogin = document.getElementById('btnLogin');
+const fBtnSignup = document.getElementById('fBtnSignup');
+const fBtnLogin = document.getElementById('fBtnLogin')
+const formModalLogin = document.getElementById('modalLogin');
+const btnRegParent = document.getElementById('btnRegParent');
 
-// $('#buttonLogin').on('hidden.bs.modal', function (e) {
-//   alert('Hello Ali');
-// })
 
-function goLogin(){
-  let txtId = document.getElementById('txtId').value;
-  let txtPassword = document.getElementById('txtPassword').value;
+btnLogin.addEventListener('click', function(){
+  const inputID = document.getElementById('inputID').value;
+  const inputPass = document.getElementById('inputPass').value;
+  const iIDLeng = inputID.length;
 
-  alert(txtId + '\n' + txtPassword);
-}
+  if(iIDLeng > 0){
+    const newBtnLogout = document.createElement('button');
+    const newBLogoutText = document.createTextNode('Logout');
+    newBtnLogout.appendChild(newBLogoutText);
+    newBtnLogout.classList.add('btn', 'btn-primary');
+
+    console.log(newBtnLogout);
+
+
+    fBtnLogin.style.visibility = 'hidden';
+    fBtnSignup.style.visibility = 'hidden';
+    btnRegParent.insertBefore(newBtnLogout, fBtnLogin);
+
+  }
+  
+  console.log(inputID, inputPass, iIDLeng);
+
+  
+
+})
