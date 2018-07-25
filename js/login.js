@@ -14,19 +14,24 @@ btnLogin.addEventListener('click', function(){
     const newBtnLogout = document.createElement('button');
     const newBLogoutText = document.createTextNode('Logout');
     newBtnLogout.appendChild(newBLogoutText);
-    newBtnLogout.classList.add('btn', 'btn-primary');
-
+    newBtnLogout.classList.add('btn', 'btn-primary', 'efBtnLogout');
+    newBtnLogout.setAttribute('id', 'idBtnLogout');
     console.log(newBtnLogout);
-
 
     fBtnLogin.style.visibility = 'hidden';
     fBtnSignup.style.visibility = 'hidden';
-    btnRegParent.insertBefore(newBtnLogout, fBtnLogin);
+    btnRegParent.insertBefore(newBtnLogout, fBtnSignup);
+
+    const fBtnLogout = document.getElementById('idBtnLogout');
+
+    fBtnLogout.addEventListener('click', function(){
+      fBtnLogin.style.visibility = 'visible';
+      fBtnSignup.style.visibility = 'visible';
+      newBtnLogout.style.visibility = 'hidden';
+
+    })
+
 
   }
-  
-  console.log(inputID, inputPass, iIDLeng);
-
-  
-
 })
+
