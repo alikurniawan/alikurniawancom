@@ -3,10 +3,10 @@
 
 <head>
 	<script>
-		// if (location.protocol != 'https:')
-		// {
-		//  location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-		// }
+		if (location.protocol != 'https:')
+		{
+		 location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+		}
 	</script>
 
   <meta charset="utf-8">
@@ -53,6 +53,7 @@
       </div>
       <div class="modal-body form-group mx-sm-3 mb-2">
         <!-- ... -->
+        <img src="" class="profile-img" alt="">
         <input type="text" class="mar form-control" id="inputID" placeholder="Your ID Please">
         <input type="password" class="mar form-control" id="inputPass" placeholder="Password">
         <!-- ... -->
@@ -71,36 +72,31 @@
   <!-- Modal login -->
 
   <!--Modal signup -->
-  <div class="modal fade" id="modalSignup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal fade" id="modalSignup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Please Login </h5>
+          <h5 class="modal-title" id="exampleModalLabel">Member Area</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body form-group mx-sm-3 mb-2">
+          <!-- ... -->
+          <input type="text" class="mar form-control" id="inputEmail" placeholder="Your Email Address">
+          <input type="text" class="mar form-control" id="inputPass" placeholder="Mobile Number">
+          <input type="password" class="mar form-control" id="inputPass" placeholder="Your Password">
 
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">Username</span>
-            </div>
-            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
-          </div>
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">Pass</span>
-            </div>
-            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
-          </div>
-
+          
+          
+          <!-- ... -->
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Ok</button>
-
+          <button type="button" class="btn btn-danger">Forget ID ?</button>
+          <button type="button" class="btn btn-success" id="btnLogin">Login</button>
         </div>
+  
       </div>
     </div>
   </div>
@@ -199,6 +195,7 @@
   </section>
 
   <!-- Portfolio Grid -->
+  <!-- Judul Porfolio -->
   <section class="bg-light" id="portfolio">
     <div class="container">
       <div class="row">
@@ -207,97 +204,77 @@
           <h3 class="section-subheading text-muted">Personal</h3>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
+
+      <!-- Row Kedua -->
+      <div class="row"> 
+        <div class="col-md">
+          <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header"><img src="./img/portfolio/appIcon.png" alt="">App 1 <span class="float-right">$0</span></div>
+            <div class="card-body">
+              <h5 class="card-title">Evisa Online Application</h5>
+              <p class="card-text">Download Your Visa Online</p>
             </div>
-            <img class="img-fluid" src="img/portfolio/evisa.png" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>EVISA</h4>
-            <p class="text-muted">Evisa Online</p>
+            <div class="card-body">
+              <a class="btn btn-primary float-right" href="https://evisa.alikurniawan.com" target="_blank" onclick="window.open(this.href, 'mywin',
+              'left=20,top=20,width=980,height=700,toolbar=1,resizable=0'); return false;">View</a>
+            </div>
+            <div class="card-footer">
+              <p style="font-size: 10px" class="float-left">L.PHP.Mysql</p>
+              <h6 class="float-right">Ver 0.1.0</h6>
+            </div>
           </div>
         </div>
-
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
+        <div class="col-md">
+          <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+            <div class="card-header"><img src="./img/portfolio/appIcon.png" alt="">App 2<span class="float-right">$0</span></div>
+            <div class="card-body">
+              <h5 class="card-title">Daftar SDN</h5>
+              <p class="card-text">Pendaftaran Calon Murid Baru sekolah Dasar</p>
             </div>
-            <img class="img-fluid" src="img/portfolio/" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Network Infrastructure</h4>
-            <p class="text-muted">Cisco, Mikrotik, Fortinet Configuration</p>
+            <div class="card-body">
+                <a class="btn btn-primary float-right" href="UnderConstruction" target="_blank" onclick="window.open(this.href, 'mywin',
+                'left=20,top=20,width=980,height=700,toolbar=1,resizable=0'); return false;">View</a>
+              </div>
+            <div class="card-footer">
+                <p style="font-size: 10px" class="float-left">L.JS.Mysql</p>
+              <h6 class="float-right">Ver 0.1.0</h6>
+            </div>
           </div>
         </div>
-
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
+        <div class="col-md">
+          <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+            <div class="card-header"><img src="./img/portfolio/appIcon.png" alt="">App 3<span class="float-right">$0</span></div>
+            <div class="card-body">
+              <h5 class="card-title">Login Page</h5>
+              <p class="card-text">Register Your New Account</p>
             </div>
-            <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>React JS Project</h4>
-            <p class="text-muted">Node JS</p>
+            <div class="card-body">
+              <a class="btn btn-primary float-right" href="UnderConstruction" target="_blank" onclick="window.open(this.href, 'mywin',
+                    'left=20,top=20,width=980,height=700,toolbar=1,resizable=0'); return false;">View</a>
+            </div>
+              <div class="card-footer">
+                  <p style="font-size: 10px" class="float-left">L.JS.Mysql</p>
+                <h6 class="float-right">Ver 0.1.0</h6>
+              </div>
           </div>
         </div>
-
-        <!-- <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
+        <div class="col-md">
+          <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header">App 4</div>
+            <div class="card-body">
+              <h5 class="card-title">Login Page</h5>
+              <p class="card-text">Under Construction</p>
             </div>
-            <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Lines</h4>
-            <p class="text-muted">Branding</p>
-          </div>
-        </div> -->
-
-        <!-- <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
+            <div class="card-body">
+                <a class="btn btn-primary float-right" href="UnderConstruction" target="_blank" onclick="window.open(this.href, 'mywin',
+                      'left=20,top=20,width=980,height=700,toolbar=1,resizable=0'); return false;">View</a>
               </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Southwest</h4>
-            <p class="text-muted">Website Design</p>
+                <div class="card-footer">
+                    <p style="font-size: 10px" class="float-left">L.JS.Mysql</p>
+                  <h6 class="float-right">Ver 0.1.0</h6>
+                </div>
           </div>
-        </div> -->
-
-        <!-- <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Window</h4>
-            <p class="text-muted">Photography</p>
-          </div>
-        </div> -->
-
+        </div>
       </div>
     </div>
   </section>
@@ -608,6 +585,41 @@
       </div>
     </div>
   </div>
+
+    <!-- Modal Daftar SD -->
+    <div class="portfolio-modal modal fade" id="daftarSd" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores
+                    repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Finish</li>
+                    <li>Category: Identity</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                      <i class="fa fa-times"></i>
+                      Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <!-- Modal 3 -->
   <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">

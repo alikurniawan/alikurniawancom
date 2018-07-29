@@ -22,6 +22,8 @@ btnLogin.addEventListener('click', function(){
     fBtnSignup.style.visibility = 'hidden';
     btnRegParent.insertBefore(newBtnLogout, fBtnSignup);
 
+    formModalLogin.style.display = 'none';
+
     const fBtnLogout = document.getElementById('idBtnLogout');
 
     fBtnLogout.addEventListener('click', function(){
