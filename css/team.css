@@ -1,7 +1,6 @@
-.teamsize{
-  width: 150px; height: 150px;
-
+.iSize{
+  width: 40%;
 }
-.flexname{
-  display: flex; justify-content: space-around;
+.fDisplay{
+  display: flex; justify-content: flex-start;
 }

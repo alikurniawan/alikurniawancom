@@ -9,30 +9,23 @@ let getData = () => {
 
       datas.map((data, index) => {
         followerList += `
-            <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="${data.avatar_url}" alt="">
-              <h4>${data.login}</h4>
-              <p class="text-muted">Fullstack Developer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
+        
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <div class="card-header">
+              <img src="./img/team/teamIcon.png" alt=""/>
+              <span>${data.login}</span>
+              </div>
+              <div class="card-body">
+                <img class="card-img" src="${data.avatar_url}"/>
+              </div>
+              <div class="card-footer">
+                <p class="text-center">Fullstack Dev</p>
+              </div>
+
             </div>
           </div>
+        
         `;
       })
       list.innerHTML = followerList;
